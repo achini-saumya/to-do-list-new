@@ -1,0 +1,147 @@
+body {
+    background: url(img3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.img1{
+    width: 35%;
+    height: auto;
+    float: right;
+    padding: 10px;
+}
+
+.img2{
+    width: 15%;
+    height: auto;
+    float: right;
+}
+
+.container {
+    backdrop-filter: blur(15px);
+    width: 60%;
+    padding: 40px;
+    border: 1px pink;
+    border-radius: 20px;
+    box-shadow: 4px 4px 12px 4px whitesmoke;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    backdrop-filter: blur(10px);
+    font-family: cursive;
+    font-style: oblique;
+    color: rgb(233, 165, 177);
+    text-shadow: 2px 2px white;
+    font-size: 6vw;   
+}
+
+.container #addTaskInput {
+    border: solid;
+    border-color: rgb(231, 231, 231);
+    color: black;
+    border-radius: 10px;
+    width: 60%;
+    height: 2vw;
+    font-family: cursive;
+    font-size: 1.6vw;    
+}
+
+.container input:focus{
+    outline: none;
+}
+
+.container .add-task-btn {
+    border-color: rgb(137, 183, 235);
+    border-style: solid;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 1.3vw;
+    font-family: cursive;   
+}
+
+.container .add-task-btn:hover {
+    background: rgb(23, 155, 207);
+}
+
+.container #added-task {
+    background: rgb(236, 195, 195);
+    font-size: 1.6vw;
+    width: 92%;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column-reverse;
+    padding: 5px ;
+}
+
+.task {
+    font-size: 2vw;
+    font-family: cursive;
+    margin: 10px 0;
+}
+
+.task.completed {
+    color: rgb(95, 6, 68);
+    text-decoration: line-through;
+}
+
+.delete-btn {
+    width: 7.5vw;
+    color: rgb(100, 17, 17);
+    border: none;
+    padding: 0.25vw ;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-left: 10vw;
+    font-size: 1.5vw;   
+}
+
+.delete-btn:hover {
+    background: rgb(219, 153, 164);
+}
+
+.checkbox{
+    width: 3vw;
+}
+
+
+@media screen and (max-width: 768px) {
+    .title{
+        font-size: 10vw;
+    }
+
+    .container #addTaskInput {
+        height: 3.5vw;
+        font-size: 3vw;    
+    }
+
+    .container .add-task-btn {
+        font-size: 3vw;   
+    }
+
+    .task {
+        font-size: 4vw;
+    }
+    
+    
+    .delete-btn{
+        padding: 1vw 2vw;
+        margin-left: 2vw;
+        font-size: 2vw;   
+    }
+    
+}
+
